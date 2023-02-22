@@ -1,0 +1,15 @@
+[package]
+name = "bridge"
+version = "0.0.0"
+edition = "2018"
+
+[lib]
+crate-type = ["staticlib", "cdylib"]
+
+[build-dependencies]
+flutter_rust_bridge_codegen = "1.64.*"
+
+[dependencies]
+flutter_rust_bridge = "1.64.*"
+lazy_static = "1.4.0"
+anyhow = "1.0.54"
